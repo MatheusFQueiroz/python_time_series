@@ -48,7 +48,7 @@ def maximo(nums):
         if len(nums) == 0 :
             raise ValueError
     except ValueError:
-        print('An empty array was provided.')
+        return 'An empty array was provided.'
     else:
         aux = nums[0]
         for i in range(0, len(nums)):
@@ -62,4 +62,4 @@ def maximo(nums):
 print(e_par(3))
 print(fatorial(5))
 print(maximo([12, 0, 17, 28, 39]))
-maximo([])
+print(maximo([]))
